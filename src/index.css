@@ -1,0 +1,112 @@
+.stop-watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  max-width: 600px; /* Maximum width to prevent it from becoming too large */
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #282c34;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.stop-watch:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.display {
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.display:hover {
+  background-color: #666;
+}
+
+.control {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+button.Start {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+button.Stop {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+button.Reset {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .stop-watch {
+    width: 90%; /* Make it more compact on smaller screens */
+    padding: 15px;
+  }
+
+  .display {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .stop-watch {
+    width: 95%; /* Adjust for even smaller screens */
+  }
+
+  .display {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  button {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+}
