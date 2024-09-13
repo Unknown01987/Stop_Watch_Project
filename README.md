@@ -31,10 +31,10 @@ npm install
 npm run dev
 
 # Usage
-Once the project is running:
-Click the "Start" button to begin the stopwatch.
-Click the "Stop" button to pause the timer.
-Click the "Reset" button to reset the stopwatch to zero.
+- Once the project is running:
+- Click the "Start" button to begin the stopwatch.
+- Click the "Stop" button to pause the timer.
+- Click the "Reset" button to reset the stopwatch to zero.
 
 # Project Status
 Project Status: Complete
